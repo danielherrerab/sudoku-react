@@ -11,10 +11,11 @@ export const themeVariables =  {
   backgroundGradient: ' linear-gradient(90deg, rgba(33,37,43,1) 0%, rgba(55,61,72,1) 75%, rgba(33,37,43,1) 100%)',
   fontColor: '#fff',
   transition: '0.3s',
-  primaryColor: '113, 218, 218',
-  primaryColorRgb: '154, 229, 229',
-  primaryColorTint: '#9ae5e5',
-  primaryColorTintRgb: '154, 229, 229',
+  primaryColor: '#808080',
+  primaryColorRgb: '128, 128, 128',
+  primaryColorTint: '#1f7a7a',
+  primaryColorTintRgb: '31, 122, 122',
+  puzzleColor: '#9ae5e5'
 }
 
 const Theme = ({ children } : ThemeProps) => {

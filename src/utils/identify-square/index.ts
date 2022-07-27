@@ -10,7 +10,7 @@ interface IInput {
  * A function that identifies and returns the current square of a given sudoku grid at a row and column index.
  * @param input Object with 9X9 Sudoku Grid, row index and column index
  */
-const identifyWorkingSquare = ({ col, grid, row }: IInput): SQUARE => {
+const identifySquare = ({ col, grid, row }: IInput): SQUARE => {
   const square = []
   if (row < 3) {
     if (col < 3)
@@ -47,4 +47,4 @@ const identifyWorkingSquare = ({ col, grid, row }: IInput): SQUARE => {
   return square as SQUARE
 }
 
-export default identifyWorkingSquare
+export default identifySquare

@@ -1,14 +1,21 @@
 import styled, { css } from 'styled-components'
 
-export const Container = styled.div`
-${({theme}) => css`
+interface IProps {
+  active?: boolean,
+  isPuzzel?: boolean
+}
+export const Container = styled.div<IProps>`
+${({ active, isPuzzel, theme}) => css`
   align-items: center;
-  border: 1px solid currentColor;
+  background-color: ${active ? theme.primaryColor : 'transparent'};
+  border: 1px solid ${ theme.fontColor };
+  color: ${isPuzzel ? theme.puzzleColor : theme.fontColor };
   cursor: pointer;
   display: flex;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0;
+  font-weight: ${isPuzzel ? 700 : 400 };
   height: auto;
   justify-content: center;
   transition: ${theme.transition};

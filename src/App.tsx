@@ -1,5 +1,4 @@
-import React, { FC } from "react";
-import { Content, Title, Card, Grid } from './components'
+import { Content, Title, Card, Grid, Numbers, NewBtton } from './components'
 
 const App = () => {
   return (
@@ -9,7 +8,9 @@ const App = () => {
           Sudoku App
         </Title>
         <Card data-cy="card">
+          <NewBtton />
           <Grid />
+          <Numbers />
         </Card>
       </Content>
     </div>
